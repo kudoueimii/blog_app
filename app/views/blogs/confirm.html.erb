@@ -4,9 +4,9 @@
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
 
-  <p>タイトル:<%= @blog.title %></p>
-  <p>本文:<%= @blog.content %></p>
-  <%= form.submit  "登録する" %>
-<% end %>
+  <p>タイトル: <%= @blog.title %></p>
+  <p>本文: <%= @blog.content %></p>
+  <%= form.submit "登録する" %>
 
-<%= link_to '戻る', :back %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
